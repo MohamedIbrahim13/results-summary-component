@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="build/styles.css">
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+
+<body>
+  <main class="md:w-[50%]">
+    <div class="result text-center md:rounded-3xl rounded-t-none rounded-b-3xl">
+      <h1>Your Result</h1>
+      <div class="w-36 h-36 mx-auto rounded-full circle flex flex-col justify-center">
+        <p class="text-6xl text-white font-mono score"></p>
+        <p class="text-[color:var(--lightLavender)] text-sm">of 100</p>
+      </div>
+
+      <p class="text-2xl font-bold text-white my-3">Great</p>
+      <p class="text-[16px] text-[color:var(--lightLavender)]">You scored higher than 65% of the people who have taken
+        these tests.</p>
+    </div>
+    <div class="summary md:shadow-2xl md:rounded-r-3xl">
+      <h1>Summary</h1>
+      <div class="items">
+        <!-- <div class="py-2 px-2.5 rounded-md flex justify-between text-[color:var(--lightRed)]">
+          <div class="flex items-center"><img src="./assets/images/icon-reaction.svg" class="float-left mr-1"
+              alt="">Reaction</div>
+          <p><span>80</span> / 100</p>
+        </div>
+        <div class="py-2 px-2.5 rounded-md flex justify-between text-[color:var(--orangey-Yellow)]">
+          <div class="flex items-center"><img src="./assets/images/icon-memory.svg" class="float-left mr-1"
+              alt="">Memory</div>
+          <p><span>92</span> / 100</p>
+        </div>
+        <div class="py-2 px-2.5 rounded-md flex justify-between text-[color:var(--greenTeal)]">
+          <div class="flex items-center"><img src="./assets/images/icon-verbal.svg" class="float-left mr-1"
+              alt="">Verbal</div>
+          <p><span>61</span> / 100</p>
+        </div>
+        <div class="py-2 px-2.5 rounded-md flex justify-between text-[color:var(--cobaltBlue)]">
+          <div class="flex items-center"><img src="./assets/images/icon-visual.svg" class="float-left mr-1"
+              alt="">Visual</div>
+          <p><span>72</span> / 100</p>
+        </div> -->
+      </div>
+      <button type="button" class="text-white bg-[color:var(--darkGrayBlue)] w-full py-2 rounded-full">Continue</button>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

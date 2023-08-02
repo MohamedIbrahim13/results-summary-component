@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --lightRed: hsl(0, 100%, 67%);
+    --orangey-Yellow: hsl(39, 100%, 56%);
+    --greenTeal: hsl(166, 100%, 37%);
+    --cobaltBlue: hsl(234, 85%, 45%);
+    --bg-lightSlateBlue: hsl(252, 100%, 67%);
+    --bg-lightRoyalBlue: hsl(241, 81%, 54%);
+    --circle-violetBlue: hsla(256, 72%, 46%, 1);
+    --circle-persianBlue: hsla(241, 72%, 46%, 0);
+    --paleBlue: hsl(221, 100%, 96%);
+    --lightLavender: hsl(241, 100%, 89%);
+    --darkGrayBlue: hsl(224, 30%, 27%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+    
+}
+
+main{
+    /* box-sizing: border-box; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.summary{
+    /* box-shadow: 5px 5px 40px var(--darkGrayBlue); */
+    padding: 25px 30px;
+}
+
+.items{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 12.5px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.items div {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.items p {
+    
+    color: gainsboro;
+}
+
+.items span {
+    color: var(--darkGrayBlue);
+}
+.items div:first-child{
+    background-color: rgba(255, 87, 87, 0.05);
+    color: var(--lightRed);
+}
+
+.items div:nth-child(2){
+    background-color: rgba(255, 176, 31, 0.05);
+    color: var(--orangey-Yellow);
+}
+
+.items div:nth-child(3){
+    background-color: rgba(0, 189, 145, 0.05);
+    color: var(--greenTeal);
+}
+
+
+.items div:last-child{
+    background-color: rgba(17, 37, 212, 0.05);
+    color: var(--cobaltBlue);
+}
+
+.items div:first-child div{
+    color: var(--lightRed);
+}
+
+.items div:nth-child(2) div{
+    color: var(--orangey-Yellow);
+}
+
+.items div:nth-child(3) div{
+
+    color: var(--greenTeal);
+}
+
+
+.items div:last-child div{
+    color: var(--cobaltBlue);
+}
+
+h1{
+    font-weight: 500;
+    color: var(--darkGrayBlue);
+    font-size: 19px;
+}
+
+.result{
+    background-image: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    padding: 25px 40px;
+}
+
+.result h1{
+    color: var(--paleBlue);
+    
+}
+
+.circle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to bottom,hsl(256, 72%, 46%)
+    ,hsl(241, 72%, 46%));
+}
+
+button {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:480px) {
+    main{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+       
+    }
+}
+
+
